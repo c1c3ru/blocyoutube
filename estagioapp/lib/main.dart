@@ -332,12 +332,6 @@ class _EstagioappState extends State<Estagioapp> {
     );
   }
 }
-
-@override
-Widget build(BuildContext context) {
-  // TODO: implement build
-  throw UnimplementedError();
-}
 //bloco de animação
 
 /// `AnimatedImage` is a stateful widget that displays an animated image
