@@ -22,9 +22,9 @@ class _PageLojaState extends State<PageLoja> {
               ),
             ),
             Positioned(
-              top: 0,
-              left: 0,
-              right: 0,
+              top: 100,
+              left: 100,
+              right: 50,
               bottom: MediaQuery.of(context).size.height / 2,
               child: Container(
                   alignment: Alignment.topCenter,
