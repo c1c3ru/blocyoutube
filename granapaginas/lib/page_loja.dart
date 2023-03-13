@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class PageLoja extends StatefulWidget {
-
   @override
   _PageLojaState createState() => _PageLojaState();
 }
@@ -21,34 +20,54 @@ class _PageLojaState extends State<PageLoja> {
                 ),
               ),
             ),
-            Positioned(
-              top: 100,
-              left: 100,
-              right: 50,
-              bottom: MediaQuery.of(context).size.height / 2,
-              child: Container(
+            Column(
+              children: [
+                Container(
                   alignment: Alignment.topCenter,
-                  height: MediaQuery.of(context).size.height * 0.1,
-                  width:  MediaQuery.of(context).size.width * 0.1,
-                  child: Image.asset('assets/images/bau_topo_branco.png')),
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  child: Stack(
+                    children: [
+                      Row(
+                        //mainAxisAlignment: MainAxisAlignment.start,
+                        //mainAxisSize: MainAxisSize.,
+                        children: [
+                          Container(
+                            alignment: Alignment.centerLeft,
+                            height: MediaQuery.of(context).size.height * 0.5,
+                            width: MediaQuery.of(context).size.width * 0.4,
+                            child: Image.asset(
+                                'assets/images/bau_topo_branco.png'),
+                          ),
+                          Spacer(),
+                          Container(
+                            padding: EdgeInsets.fromLTRB(10, 0, 0, 20),
+                            height: MediaQuery.of(context).size.height * 0.3,
+                            width: MediaQuery.of(context).size.width * 0.1,
+                            child: Image.asset('assets/images/botao_fecha.png'),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.5,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      child: Image.asset('assets/images/tela_anterior.png'),
+                    ),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.5,
+                      width: MediaQuery.of(context).size.width * 0.2,
+                      child: Image.asset('assets/images/proxima_tela.png'),
+                    ),
+                  ],
+                ),
+              ],
             ),
-            // Positioned(
-            //   left: 0,
-            //   right: 0,
-            //   top: MediaQuery.of(context).size.height / 8,
-            //   bottom: 0,
-            //   child: Container(
-            //       width: MediaQuery.of(context).size.width,
-            //       child: Image.asset('assets/images/botao_novoJogo.png')),
-            // ),
-            // Positioned(
-            //   left: 0,
-            //   right: 0,
-            //   top: MediaQuery.of(context).size.height / 2,
-            //   bottom: 0,
-            //   child: Container(width: MediaQuery.of(context).size.width,
-            //       child: Image.asset('assets/images/botao_loja.png')),
-            // ),
             SafeArea(
               child: Stack(
                 children: [
@@ -66,38 +85,27 @@ class _PageLojaState extends State<PageLoja> {
                                 children: [
                                   Container(
                                     alignment: Alignment.topCenter,
-                                    height: MediaQuery.of(context).size.height * 0.20,
-                                    width:  MediaQuery.of(context).size.width * 0.5,
+                                    height: MediaQuery.of(context).size.height *
+                                        0.20,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
                                     child: Image.asset(
                                       'assets/images/par_moedas.png',
                                       fit: BoxFit.fill,
                                     ),
-
                                   ),
                                 ],
                               ),
-                              // Row(
-                              //   mainAxisAlignment: MainAxisAlignment.center,
-                              //   children: [
-                              //     Container(
-                              //       height: MediaQuery.of(context).size.height *                                        0.10,
-                              //       width:  MediaQuery.of(context).size.width * 0.5,
-                              //       child: ElevatedButton(onPressed: () {},
-                              //         child: Image.asset(
-                              //           'assets/images/botao_fecha.png',
-                              //           fit: BoxFit.fill,
-                              //         ),
-                              //       ),
-                              //     ),
-                              //   ],
-                              // ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    height: MediaQuery.of(context).size.height * 0.10,
-                                    width:  MediaQuery.of(context).size.width * 0.5,
-                                    child: GestureDetector(onTap: () {},
+                                    height: MediaQuery.of(context).size.height *
+                                        0.10,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
+                                    child: GestureDetector(
+                                      onTap: () {},
                                       child: Image.asset(
                                         'assets/images/botao_comprar.png',
                                         fit: BoxFit.fill,
