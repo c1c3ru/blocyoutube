@@ -28,18 +28,29 @@ class _NivelPageState extends State<NivelPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Container(
-                            height: MediaQuery.of(context).size.height * 0.3,
-                            width: MediaQuery.of(context).size.width * 0.5,
-                            child: Image.asset(
-                                'assets/images/bau_topo_branco.png'),
+                          Expanded(
+                            child: Padding(
+                              // height: MediaQuery.of(context).size.height * 0.3,
+                              // width: MediaQuery.of(context).size.width * 0.5,
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset(
+                                  'assets/images/bau_topo_branco.png'),
+                            ),
                           ),
-                          Container(
-                            height: MediaQuery.of(context).size.height * 0.3,
-                            width: MediaQuery.of(context).size.width * 0.1,
-                            child:
-                            Image.asset('assets/images/botao_voltar.png'),
-                          ),
+                          Expanded(
+                            child: Padding(
+                              // height: MediaQuery.of(context).size.height * 0.09,
+                              // width: MediaQuery.of(context).size.width * 0.09,
+                              padding: EdgeInsets.all(80),
+                              child: GestureDetector(
+                                onTap: () {},
+                                child: Image.asset(
+                                  'assets/images/botao_voltar.png',
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          )
                         ],
                       ),
                       Expanded(
@@ -52,36 +63,42 @@ class _NivelPageState extends State<NivelPage> {
                                 Image.asset('assets/images/nivel_novo.png',
                                     height: MediaQuery.of(context).size.height * 0.1),
                                 Image.asset('assets/images/nivel.png',
-                                    height: MediaQuery.of(context).size.height * 0.1),
+                                    height: MediaQuery.of(context).size.height *
+                                        0.1),
                                 Image.asset('assets/images/nivel_bloq.png',
-                                    height: MediaQuery.of(context).size.height * 0.1),
+                                    height: MediaQuery.of(context).size.height *
+                                        0.1),
                               ],
                             ),
                             //Spacer(),
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Image.asset('assets/images/nivel_bloq.png',
                                     height: MediaQuery.of(context).size.height * 0.1),
-                                CircleAvatar(
-                                  radius: 50,
-                                  child: Image.asset('assets/images/menina.png'),
-                                ),
-                                Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.black45,
-                                  ),
-                                  child: const Text(
-                                    'Menina',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
                               ],
                             ),
+                            Stack(children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  CircleAvatar(
+                                    radius: 50,
+                                    child:
+                                        Image.asset('assets/images/menina.png'),
+                                  ),
+                                  Container(
+                                    child: const Text(
+                                      'Menina',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ]),
                           ],
                         ),
                       ),
@@ -94,7 +111,13 @@ class _NivelPageState extends State<NivelPage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height * 0.1,
                       width: MediaQuery.of(context).size.width * 0.1,
-                      child: Image.asset('assets/images/Bloja.png'),
+                      child: GestureDetector(
+                        onTap: () {},
+                        child: Image.asset(
+                          'assets/images/Bloja.png',
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                     ),
                   ),
                 ],

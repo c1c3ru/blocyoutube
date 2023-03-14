@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.12.0
   cupertino_icons: ^1.0.5
 
 dev_dependencies:
@@ -23,3 +23,14 @@ flutter:
   assets:
     - assets/images/
     - assets/sounds/
+
+
+#flutter_native_splash:
+#  color: "#ffffff";
+#  image: "assets/images/logo-fundo.png";
+#  android: true
+#  ios: true
+#flutter_icons:
+#  image_path: "assets/images/nivel_novo.png";
+#  android:  true
+#  ios: true
