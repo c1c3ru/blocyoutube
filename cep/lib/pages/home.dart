@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Text('Buscar CEP'),
               ),
-              Visibility(
+             Visibility(
                 visible: loading,
                 child: const CircularProgressIndicator(),),
               Visibility(

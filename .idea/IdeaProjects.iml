@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration />
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/cep/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cep/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/cep/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/chatbotdialogflow/build" />
+      <excludeFolder url="file://$MODULE_DIR$/chatbotdialogflow/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/chatbotdialogflow/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/granapaginas/build" />
+      <excludeFolder url="file://$MODULE_DIR$/granapaginas/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/granapaginas/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioteste/build" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioteste/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioteste/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dados/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dados/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/dados/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/smarthome/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/smarthome/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/smarthome/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_smart_home_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_smart_home_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_smart_home_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioapp/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioapp/build" />
+      <excludeFolder url="file://$MODULE_DIR$/estagioapp/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/eightball/build" />
+      <excludeFolder url="file://$MODULE_DIR$/eightball/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/eightball/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled/build" />
+      <excludeFolder url="file://$MODULE_DIR$/untitled/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/teste/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

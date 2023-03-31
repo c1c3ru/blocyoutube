@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:dio/dio.dart';
 
 import 'dart:io';
-import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -207,26 +206,6 @@ class _EstagioappState extends State<Estagioapp> {
     );
   }
 
-  Future openFile({url, filename}) async {
-    final fileName = url.split('/').last;
-    //final file = await downloadFile(linkURL, name);
-    final file = await pickFile();
-    if (file == null) {
-      return;
-    }
-    if (kDebugMode) {
-      print('Path: ${file.path}');
-    }
-
-    OpenFile.open(file.path);
-  }
-
-  Future<File?> pickFile() async {
-    final result = await FilePicker.platform.pickFiles();
-    if (result == null) return null;
-    return File(result.files.first.path!);
-  }
-
   Future<File?> downloadFile(data, local) async {
     final appStorage = await getApplicationDocumentsDirectory();
     final file = File('${appStorage.path}/$local');
@@ -238,7 +217,6 @@ class _EstagioappState extends State<Estagioapp> {
         options: Options(
           responseType: ResponseType.bytes,
           followRedirects: false,
-          receiveTimeout: 0,
         ),
       );
       final arquivo = file.openSync(mode: FileMode.write);
@@ -337,10 +315,6 @@ class _EstagioappState extends State<Estagioapp> {
               onPressed: () => downloadBook(
                   downloadLink: '${data['link']}', title: '${data['arquivo']}'),
               child: const Text('down'),
-            ),
-            ElevatedButton(
-              onPressed: () => openFile(url: '${data['link']}', filename: ''),
-              child: const Text('abrir'),
             ),
             ElevatedButton(
               onPressed: () => download(dio, '${data['link']}'),
