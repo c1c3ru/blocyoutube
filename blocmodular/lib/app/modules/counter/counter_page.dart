@@ -20,17 +20,21 @@ class _CounterPageState extends State<CounterPage> {
         title: const Text('Counter'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              controller.count.toString(),
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+        child: BlocBuilder<CounterBloc, CounterState>(
+          builder: (context, state) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                const Text(
+                  'You have pushed the button this many times:',
+                ),
+                Text(
+                  controller.count.toString(),
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+              ],
+            );
+          },
         ),
       ),
       floatingActionButton: Column(
